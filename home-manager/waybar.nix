@@ -1,5 +1,5 @@
 {...}: {
-  home-manager.users.senoraraton = _: {
+  home-manager.users.john = _: {
     home.file = {
       ".config/waybar/config.jsonc".text = ''
               {
