@@ -102,6 +102,7 @@
 
   system.stateVersion = "24.05"; # Did you read the comment?
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ "mt7922" "cfg80211" ]; 
   boot.kernelModules = [ "kvm-amd" "mt7922" "cfg80211" ];
