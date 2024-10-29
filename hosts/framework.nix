@@ -104,8 +104,8 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "sd_mod" ];
-  boot.initrd.kernelModules = [ "mt7922" "cfg80211" ]; 
-  boot.kernelModules = [ "kvm-amd" "mt7922" "cfg80211" ];
+  boot.initrd.kernelModules = [ "mt7921e" "cfg80211" ]; 
+  boot.kernelModules = [ "kvm-amd" "mt7921e" "cfg80211" ];
   boot.extraModulePackages = [ ]; 
 
   fileSystems."/" = {
